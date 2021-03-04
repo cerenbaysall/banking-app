@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.AccountAPI", "BankingApp.AccountAPI\BankingApp.AccountAPI.csproj", "{6F5ADE7A-1692-40F0-A1E3-3DA0781C0851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingApp.TransactionAPI", "BankingApp.TransactionAPI\BankingApp.TransactionAPI.csproj", "{52EE8DD6-C81D-4B32-B2B9-6E6F8A4F5237}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F5ADE7A-1692-40F0-A1E3-3DA0781C0851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5ADE7A-1692-40F0-A1E3-3DA0781C0851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5ADE7A-1692-40F0-A1E3-3DA0781C0851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5ADE7A-1692-40F0-A1E3-3DA0781C0851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52EE8DD6-C81D-4B32-B2B9-6E6F8A4F5237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EE8DD6-C81D-4B32-B2B9-6E6F8A4F5237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EE8DD6-C81D-4B32-B2B9-6E6F8A4F5237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EE8DD6-C81D-4B32-B2B9-6E6F8A4F5237}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {56E92863-2A0D-4207-9063-6D2985F73CE7}
+	EndGlobalSection
+EndGlobal
