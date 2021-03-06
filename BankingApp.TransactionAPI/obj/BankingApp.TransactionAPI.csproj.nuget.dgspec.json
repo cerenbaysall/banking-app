@@ -1,34 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ceren.keles\\source\\repos\\BankingApp\\BankingApp.TransactionAPI\\BankingApp.TransactionAPI.csproj": {}
+    "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/BankingApp.TransactionAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ceren.keles\\source\\repos\\BankingApp\\BankingApp.TransactionAPI\\BankingApp.TransactionAPI.csproj": {
+    "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/BankingApp.TransactionAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ceren.keles\\source\\repos\\BankingApp\\BankingApp.TransactionAPI\\BankingApp.TransactionAPI.csproj",
+        "projectUniqueName": "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/BankingApp.TransactionAPI.csproj",
         "projectName": "BankingApp.TransactionAPI",
-        "projectPath": "C:\\Users\\ceren.keles\\source\\repos\\BankingApp\\BankingApp.TransactionAPI\\BankingApp.TransactionAPI.csproj",
-        "packagesPath": "C:\\Users\\ceren.keles\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ceren.keles\\source\\repos\\BankingApp\\BankingApp.TransactionAPI\\obj\\",
+        "projectPath": "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/BankingApp.TransactionAPI.csproj",
+        "packagesPath": "/Users/ceren.keles/.nuget/packages/",
+        "outputPath": "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ceren.keles\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ceren.keles/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -40,10 +36,83 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.EntityFrameworkCore": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.AspNet.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNet.WebApi.Core": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
               "target": "Package",
               "version": "[5.0.3, )"
+            },
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.2.8, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUi": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
             }
           },
           "imports": [
@@ -64,7 +133,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }
