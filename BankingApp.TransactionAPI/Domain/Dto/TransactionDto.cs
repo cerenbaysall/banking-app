@@ -12,5 +12,11 @@ namespace BankingApp.TransactionAPI.Domain.Dto
         
         [JsonProperty("accountId")]
         public Guid AccountId { get; set; }
+
+        [JsonProperty("transactionType")]
+        public string TransactionType { get; set; }
+
+        [JsonProperty("createdDate")]
+        public DateTime CreatedDate { get; set; }
     }
 }

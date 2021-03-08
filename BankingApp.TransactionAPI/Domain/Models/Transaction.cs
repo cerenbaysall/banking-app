@@ -16,6 +16,7 @@ namespace BankingApp.TransactionAPI.Domain.Models
             Id = new Guid();
             AccountId = accountId;
             TransactionType = transactionType;
+            CreatedDate = DateTime.Now;
         }
 
         public Transaction(){

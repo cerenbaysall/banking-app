@@ -25,7 +25,7 @@ namespace BankingApp.TransactionAPI.Service.Services
 
         public async Task<TransactionDto> Handle(CreateTransactionCommand request, CancellationToken cancellationToken)
         {
-            var transaction = new Domain.Models.Transaction(request.AccountId);
+            var transaction = new Domain.Models.Transaction(request.AccountId, request.TransactionType);
             _transactionRepository.Add(transaction);
 
             if (await _transactionRepository.SaveChangesAsync() == 0)

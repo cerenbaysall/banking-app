@@ -42,6 +42,10 @@
               "target": "Package",
               "version": "[10.1.1, )"
             },
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[1.5.3, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[9.0.0, )"

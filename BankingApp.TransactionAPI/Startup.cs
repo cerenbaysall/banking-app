@@ -15,6 +15,7 @@ using BankingApp.TransactionAPI.Data.Repositories;
 using BankingApp.TransactionAPI.Service;
 using BankingApp.TransactionAPI.Service.Mappers;
 using BankingApp.TransactionAPI.Service.Services;
+using BankingApp.TransactionAPI.EventListener;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using Microsoft.Extensions.Options;
@@ -26,7 +27,8 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using BankingApp.TransactionAPI;
 using Microsoft.AspNetCore.Authorization;
-using BankingApp.TransactionAPI.Data;
+using Confluent.Kafka;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace BankingApp.TransactionAPI
 {
@@ -53,6 +55,17 @@ namespace BankingApp.TransactionAPI
         {
             services.AddRouting(options => options.LowercaseUrls = true);
             services.AddDbContext<TransactionDbContext>(options => options.UseInMemoryDatabase("account"));
+
+            var consumerConfig = new ConsumerConfig();  
+            Configuration.Bind("consumer", consumerConfig);  
+            services.AddSingleton<ConsumerConfig>(consumerConfig);
+            
+            services.AddHostedService(serviceProvider => new MoneyTransferEventListener(new MoneyTransferEventConfig
+            {
+                dContext = services.BuildServiceProvider().GetService<TransactionDbContext>(),
+                logger = services.BuildServiceProvider().GetService<ILogger<MoneyTransferEventListener>>()
+            }));
+
 
             services.AddAuthorization(options =>
             {
@@ -105,7 +118,8 @@ namespace BankingApp.TransactionAPI
 
             services.AddMediatR(
                 typeof(CreateTransactionHandler),
-                typeof(GetTransactionHandler));
+                typeof(GetTransactionHandler),
+                typeof(GetAccountTransactionsHandler));
 
             services.AddLogging();
 

@@ -18,7 +18,9 @@ namespace BankingApp.TransactionAPI.Service.Mappers
                 cfg.CreateMap<Domain.Models.Transaction, Domain.Dto.TransactionDto>();
                 cfg.CreateMap<Domain.Models.Transaction, Domain.Dto.TransactionDto>()
                     .ForMember(dst => dst.Id, opt => opt.MapFrom(src => src.Id))
-                    .ForMember(dst => dst.AccountId, opt => opt.MapFrom(src => src.AccountId));
+                    .ForMember(dst => dst.AccountId, opt => opt.MapFrom(src => src.AccountId))
+                    .ForMember(dst => dst.TransactionType, opt => opt.MapFrom(src => src.TransactionType))
+                    .ForMember(dst => dst.CreatedDate, opt => opt.MapFrom(src => src.CreatedDate));
             });
 
             _mapper = config.CreateMapper();

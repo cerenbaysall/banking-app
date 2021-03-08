@@ -9,7 +9,7 @@ namespace BankingApp.AccountAPI.Domain.Models
     {
         public Guid Id { get; set; }
         public Guid CustomerId { get; set; }
-        public int InitialCredit { get; set;}
+        public int InitialCredit { get; set; }
 
         public Account(Guid customerId, int initialCredit)
         {

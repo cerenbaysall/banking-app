@@ -17,11 +17,16 @@ namespace BankingApp.TransactionAPI.Domain.Commands
         [JsonProperty("accountId")]
         [Required]
         public Guid AccountId { get; }
+
+        [JsonProperty("transactionType")]
+        [Required]
+        public string TransactionType { get; }
         
         [JsonConstructor]
-        public CreateTransactionCommand(Guid accountId)
+        public CreateTransactionCommand(Guid accountId, string transactionType)
         {
             AccountId = accountId;
+            TransactionType = transactionType;
         }
     }
 }

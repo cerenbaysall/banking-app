@@ -1,11 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using BankingApp.AccountAPI.Data.IRepositories;
 using BankingApp.AccountAPI.Service.Mappers;
-using BankingApp.AccountAPI.Domain.Models;
 using BankingApp.AccountAPI.Domain.Queries;
 using BankingApp.AccountAPI.Domain.Dto;
 using MediatR;

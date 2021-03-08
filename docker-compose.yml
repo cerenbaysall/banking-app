@@ -1,0 +1,17 @@
+version: '3.4'
+
+services:
+  bankingapp.accountapi:
+    image: ${DOCKER_REGISTRY-}accountapi
+    build:
+      context: .
+      dockerfile: BankingApp.AccountAPI/Dockerfile
+    ports:
+      - "6000:6000"
+  bankingapp.transactionapi:
+    image: ${DOCKER_REGISTRY-}transactionapi
+    build:
+      context: .
+      dockerfile: BankingApp.TransactionAPI/Dockerfile
+    ports:
+      - "5000:5000"

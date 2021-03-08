@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+n1mlx46hio/JGxSBRbXu+YxPAlfI2p7u8YXAFOpXRhccpS7pNNgE8/bOUavwQ7dnG5aeRCNIgH20am8KjhC8w==",
+  "dgSpecHash": "XTeRG4Z3CQO9ICFidmDdo88wB6eyLMUP2efGX0a02TmUz0LOvyNjeZA6PewI5zfZIzgCXT7DjY/VXYuNd3s4xQ==",
   "success": true,
   "projectFilePath": "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.TransactionAPI/BankingApp.TransactionAPI.csproj",
   "expectedPackageFiles": [
     "/Users/ceren.keles/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/ceren.keles/.nuget/packages/confluent.kafka/1.6.2/confluent.kafka.1.6.2.nupkg.sha512",
+    "/Users/ceren.keles/.nuget/packages/librdkafka.redist/1.6.1/librdkafka.redist.1.6.1.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/microsoft.aspnet.cors/5.2.7/microsoft.aspnet.cors.5.2.7.nupkg.sha512",

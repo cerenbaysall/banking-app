@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jMzmEvKI2nY86wjHMi8Ii/++IT0frbgizSOGUtZiT5Y9XtvkmIkeBuLUoSHRFLzZKBpgP1UiwKTI1jLg53lb3g==",
+  "dgSpecHash": "u9CyqHGuUKhjOXk7Cz7NY7hnl6lApGb/JMnI7qMY6o5hSpSLvlgcmH841cnA47U/MG73SHxxHrsc0uEDgiu5FA==",
   "success": true,
   "projectFilePath": "/Users/ceren.keles/Desktop/Projects/exercise/banking-app/BankingApp.AccountAPI/BankingApp.AccountAPI.csproj",
   "expectedPackageFiles": [
     "/Users/ceren.keles/.nuget/packages/automapper/10.1.1/automapper.10.1.1.nupkg.sha512",
+    "/Users/ceren.keles/.nuget/packages/confluent.kafka/1.5.3/confluent.kafka.1.5.3.nupkg.sha512",
+    "/Users/ceren.keles/.nuget/packages/librdkafka.redist/1.5.3/librdkafka.redist.1.5.3.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/mediatr/9.0.0/mediatr.9.0.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/mediatr.extensions.microsoft.dependencyinjection/9.0.0/mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/microsoft.aspnet.cors/5.2.7/microsoft.aspnet.cors.5.2.7.nupkg.sha512",
@@ -86,6 +88,7 @@
     "/Users/ceren.keles/.nuget/packages/system.io.filesystem.primitives/4.0.1/system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/system.linq/4.1.0/system.linq.4.1.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/system.linq.expressions/4.1.0/system.linq.expressions.4.1.0.nupkg.sha512",
+    "/Users/ceren.keles/.nuget/packages/system.memory/4.5.0/system.memory.4.5.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/system.objectmodel/4.0.12/system.objectmodel.4.0.12.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/system.reflection/4.1.0/system.reflection.4.1.0.nupkg.sha512",
     "/Users/ceren.keles/.nuget/packages/system.reflection.emit/4.7.0/system.reflection.emit.4.7.0.nupkg.sha512",

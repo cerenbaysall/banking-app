@@ -8,6 +8,5 @@ namespace BankingApp.TransactionAPI.Domain.Models
     public class ModelBase
     {
         public DateTime CreatedDate { get; set; }
-        public DateTime UpdatedDate { get; set; }
     }
 }

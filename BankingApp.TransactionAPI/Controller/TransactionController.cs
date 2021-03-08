@@ -16,6 +16,7 @@ using BankingApp.TransactionAPI.Service.Services;
 using BankingApp.TransactionAPI.Domain.Commands;
 using BankingApp.TransactionAPI.Domain.Queries;
 using BankingApp.TransactionAPI.Domain.Dto;
+using System.Threading;
 
 namespace BankingApp.TransactionAPI.Controllers
 {
@@ -45,6 +46,15 @@ namespace BankingApp.TransactionAPI.Controllers
         public async Task<TransactionDto> GetTransactionAsync(Guid guid)
         {
             return await CommandAsync(new GetTransactionQuery(guid));
+        }
+
+        [HttpGet]
+        [Route("getaccounttransactions/{guid:Guid}")]
+        [ProducesResponseType(typeof(List<TransactionDto>), 200)]
+        [ProducesResponseType(400)]
+        public async Task<IEnumerable<TransactionDto>> GetAccountTransactionsAsync(Guid guid)
+        {
+            return await CommandAsync(new GetAccountTransactionsQuery(guid));
         }
     }
 }
