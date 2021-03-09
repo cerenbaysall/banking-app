@@ -19,7 +19,7 @@ namespace BankingApp.AccountAPI.Service.Mappers
                 cfg.CreateMap<Domain.Models.Account, Domain.Dto.AccountDto>()
                     .ForMember(dst => dst.Id, opt => opt.MapFrom(src => src.Id))
                     .ForMember(dst => dst.CustomerId, opt => opt.MapFrom(src => src.CustomerId))
-                    .ForMember(dst => dst.InitialCredit, opt => opt.MapFrom(src => src.InitialCredit));
+                    .ForMember(dst => dst.Balance, opt => opt.MapFrom(src => src.Balance));
             });
 
             _mapper = config.CreateMapper();

@@ -13,7 +13,7 @@ namespace BankingApp.AccountAPI.Domain.Dto
         [JsonProperty("customerId")]
         public Guid CustomerId { get; set; }
 
-        [JsonProperty("initialCredit")]
-        public int InitialCredit { get; set; }
+        [JsonProperty("balance")]
+        public int Balance { get; set; }
     }
 }

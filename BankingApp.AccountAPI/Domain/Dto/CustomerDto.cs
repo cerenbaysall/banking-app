@@ -15,5 +15,8 @@ namespace BankingApp.AccountAPI.Domain.Dto
         
         [JsonProperty("surname")]
         public string Surname { get; set; }
+
+        [JsonProperty("customerNo")]
+        public string CustomerNo { get; set; }
     }
 }

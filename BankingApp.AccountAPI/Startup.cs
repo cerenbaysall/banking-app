@@ -126,9 +126,8 @@ namespace BankingApp.AccountAPI
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             var context = serviceProvider.GetService<Data.AccountDbContext>();
-            var mediator = serviceProvider.GetService<IMediator>();
-            
-            //Data.CreateData(context, mediator);
+            DataCreate.CreateData(context);
+
             app.UseSwagger();
             app.UseCors("CorsPolicy");
 

@@ -20,11 +20,11 @@ namespace BankingApp.AccountAPI.Service.Subscribers
         public async Task Handle(AccountCreatedEvent notification, CancellationToken cancellationToken)
         {
             try{
-                var kafkaUrl = Environment.GetEnvironmentVariable ("KAFKA_URL");
+                // var kafkaUrl = Environment.GetEnvironmentVariable ("KAFKA_URL");
                 var config = new ProducerConfig
                     {
                         BootstrapServers = "localhost:9092",
-                        ClientId = Environment.GetEnvironmentVariable ("KAFKA_URL"),
+                        ClientId = "test-client",
                     };
 
                 using (var producer = new ProducerBuilder<Null, string>(config).Build())

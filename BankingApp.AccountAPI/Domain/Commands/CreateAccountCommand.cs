@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using BankingApp.AccountAPI.Domain.Dto;
@@ -14,18 +11,18 @@ namespace BankingApp.AccountAPI.Domain.Commands
         {
         }
 
-        [JsonProperty("customerId")]
+        [JsonProperty("customerNo")]
         [Required]
-        public Guid CustomerId { get; }
+        public string CustomerNo { get; }
 
         [JsonProperty("initialCredit")]
         [Required]
         public int InitialCredit { get; }
         
         [JsonConstructor]
-        public CreateAccountCommand(Guid customerId, int initialCredit)
+        public CreateAccountCommand(string customerNo, int initialCredit)
         {
-            CustomerId = customerId;
+            CustomerNo = customerNo;
             InitialCredit = initialCredit;
         }
     }

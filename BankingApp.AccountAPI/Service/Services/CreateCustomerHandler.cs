@@ -23,7 +23,7 @@ namespace BankingApp.AccountAPI.Service.Services
 
         public async Task<CustomerDto> Handle(CreateCustomerCommand request, CancellationToken cancellationToken)
         {
-            var customer = new Customer(request.Name, request.Surname);
+            var customer = new Customer(request.Name, request.Surname, request.CustomerNo);
             _customerRepository.Add(customer);
 
             if (await _customerRepository.SaveChangesAsync() == 0)

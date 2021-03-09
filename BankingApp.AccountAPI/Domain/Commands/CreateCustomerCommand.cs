@@ -21,12 +21,17 @@ namespace BankingApp.AccountAPI.Domain.Commands
         [JsonProperty("surname")]
         [Required]
         public string Surname { get; }
+
+        [JsonProperty("customerNo")]
+        [Required]
+        public string CustomerNo { get; }
         
         [JsonConstructor]
-        public CreateCustomerCommand(string name, string surname)
+        public CreateCustomerCommand(string name, string surname, string customerNo)
         {
             Name = name;
             Surname = surname;
+            CustomerNo = customerNo;
         }
     }
 }

@@ -27,12 +27,12 @@ namespace BankingApp.AccountAPI.Service.Services
         public async Task<AccountDto> Handle(CreateAccountCommand request, CancellationToken cancellationToken)
         {
             var customer = await _customerRepository.GetAsync(e =>
-                e.Id == request.CustomerId);
+                e.CustomerNo == request.CustomerNo);
 
             if(customer == null)
-                throw new ApplicationException("There is no customer with the customerId :" + request.CustomerId);
+                throw new ApplicationException("There is no customer with the Customer No :" + request.CustomerNo);
 
-            var account = new Domain.Models.Account(request.CustomerId, request.InitialCredit);
+            var account = new Domain.Models.Account(customer.Id, request.InitialCredit);
             _accountRepository.Add(account);
 
             if (await _accountRepository.SaveChangesAsync() == 0)
