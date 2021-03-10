@@ -52,7 +52,7 @@ namespace BankingApp.AccountAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRouting(options => options.LowercaseUrls = true);
-            services.AddDbContext<AccountDbContext>(options => options.UseInMemoryDatabase("account"));
+            services.AddDbContext<AccountDbContext>(options => options.UseInMemoryDatabase("accountdb"));
 
             services.AddAuthorization(options =>
             {

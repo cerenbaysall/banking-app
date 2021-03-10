@@ -26,12 +26,10 @@ namespace BankingApp.AccountAPI.Controllers
     public class AccountController : ApiControllerBase
     {
         private readonly IConfiguration _configuration;
-        private readonly IJwtAuthenticationManager _jwtAuthenticationManager;
 
-        public AccountController(IMediator mediator, IConfiguration configuration, IJwtAuthenticationManager jwtAuthenticationManager) : base(mediator)
+        public AccountController(IMediator mediator, IConfiguration configuration) : base(mediator)
         {
             _configuration = configuration;
-            _jwtAuthenticationManager = jwtAuthenticationManager;
         }
 
         [HttpPost]
