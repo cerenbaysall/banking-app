@@ -32,7 +32,7 @@ namespace BankingApp.AccountAPI.Service.Services
             if(customer == null)
                 throw new ApplicationException("There is no customer with the Customer No :" + request.CustomerNo);
 
-            var account = new Domain.Models.Account(customer.Id, request.InitialCredit);
+            var account = new Domain.Models.Account(customer.Id, request.InitialCredit, request.Iban);
             _accountRepository.Add(account);
 
             if (await _accountRepository.SaveChangesAsync() == 0)

@@ -49,5 +49,14 @@ namespace BankingApp.AccountAPI.Controllers
         {
             return await CommandAsync(new GetAccountQuery(guid));
         }
+
+        [HttpPost]
+        [Route("getcustomeraccounts")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(400)]
+        public async Task<IEnumerable<AccountDto>> GetCustomerAccountsAsync([FromBody] GetCustomerAccountsQuery query)
+        {
+            return await CommandAsync(query);
+        }
     }
 }

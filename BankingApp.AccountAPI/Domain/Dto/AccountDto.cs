@@ -15,5 +15,8 @@ namespace BankingApp.AccountAPI.Domain.Dto
 
         [JsonProperty("balance")]
         public int Balance { get; set; }
+
+        [JsonProperty("iban")]
+        public string Iban { get; set; }
     }
 }

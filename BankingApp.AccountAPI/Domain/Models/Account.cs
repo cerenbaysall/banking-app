@@ -11,11 +11,14 @@ namespace BankingApp.AccountAPI.Domain.Models
         public Guid CustomerId { get; set; }
         public int Balance { get; set; }
 
-        public Account(Guid customerId, int balance)
+        public string Iban { get; set; }
+
+        public Account(Guid customerId, int balance, string iban)
         {
             Id = new Guid();
             CustomerId = customerId;
             Balance = balance;
+            Iban = iban;
         }
 
         public Account(){

@@ -18,12 +18,17 @@ namespace BankingApp.AccountAPI.Domain.Commands
         [JsonProperty("initialCredit")]
         [Required]
         public int InitialCredit { get; }
+
+        [JsonProperty("iban")]
+        [Required]
+        public string Iban { get; }
         
         [JsonConstructor]
-        public CreateAccountCommand(string customerNo, int initialCredit)
+        public CreateAccountCommand(string customerNo, int initialCredit, string iban)
         {
             CustomerNo = customerNo;
             InitialCredit = initialCredit;
+            Iban = iban;
         }
     }
 }
